@@ -1,0 +1,70 @@
+start:
+  description: Restart systemd service.
+  target:
+    entity:
+      integration: systemd_manager
+      domain: switch
+  fields:
+    mode:
+      description: Mode
+      default: REPLACE
+      example: REPLACE
+      required: true
+      selector:
+        select:
+          options:
+            - "REPLACE"
+            - "FAIL"
+            - "ISOLATE"
+            - "IGNORE_DEPENDENCIES"
+            - "IGNORE_REQUIREMENTS"
+stop:
+  description: Restart systemd service.
+  target:
+    entity:
+      integration: systemd_manager
+      domain: switch
+  fields:
+    mode:
+      description: Mode
+      default: REPLACE
+      example: REPLACE
+      required: true
+      selector:
+        select:
+          options:
+            - "REPLACE"
+            - "FAIL"
+            - "IGNORE_DEPENDENCIES"
+            - "IGNORE_REQUIREMENTS"
+restart:
+  description: Restart systemd service.
+  target:
+    entity:
+      integration: systemd_manager
+      domain: switch
+  fields:
+    mode:
+      description: Mode
+      default: REPLACE
+      example: REPLACE
+      required: true
+      selector:
+        select:
+          options:
+            - "REPLACE"
+            - "FAIL"
+            - "IGNORE_DEPENDENCIES"
+            - "IGNORE_REQUIREMENTS"
+enable:
+  description: Enable systemd service.
+  target:
+    entity:
+      integration: systemd_manager
+      domain: switch
+disable:
+  description: Disable systemd service.
+  target:
+    entity:
+      integration: systemd_manager
+      domain: switch

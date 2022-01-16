@@ -1,0 +1,14 @@
+{
+  "domain": "systemd_manager",
+  "name": "Systemd Manager",
+  "version": "1.0.0",
+  "documentation": "https://github.com/dmamontov/hass-systemd-manager",
+  "issue_tracker": "https://github.com/dmamontov/hass-systemd-manager/issues",
+  "config_flow": true,
+  "requirements": [
+    "dbus-python==1.2.18"
+  ],
+  "dependencies": [],
+  "codeowners": ["@dmamontov"],
+  "iot_class": "local_polling"
+}

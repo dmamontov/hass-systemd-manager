@@ -1,0 +1,30 @@
+{
+  "config": {
+    "title": "Systemd Manager",
+    "abort": {
+      "single_instance_allowed": "Only one configuration is allowed."
+    },
+    "step": {
+      "user": {
+        "description": "Select the services you want to monitor",
+        "data": {
+          "services": "Services"
+        }
+      }
+    }
+  },
+  "options": {
+    "abort": {
+      "updated": "Data updated, restart Home Assistant"
+    },
+    "step": {
+      "settings": {
+        "description": "Select the services you want to monitor",
+        "data": {
+          "services": "Services",
+          "scan_interval": "Update interval in seconds [PRO]"
+        }
+      }
+    }
+  }
+}

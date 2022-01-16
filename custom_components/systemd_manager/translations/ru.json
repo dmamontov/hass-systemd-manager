@@ -1,0 +1,30 @@
+{
+  "config": {
+    "title": "Systemd Manager",
+    "abort": {
+      "single_instance_allowed": "Допускается только одна конфигурация."
+    },
+    "step": {
+      "user": {
+        "description": "Выберите службы которые требуется отслеживать",
+        "data": {
+          "services": "Службы"
+        }
+      }
+    }
+  },
+  "options": {
+    "abort": {
+      "updated": "Данные обновлены, перезапустите Home Assistant"
+    },
+    "step": {
+      "settings": {
+        "description": "Выберите службы которые требуется отслеживать",
+        "data": {
+          "services": "Службы",
+          "scan_interval": "Интервал обновления в секундах [PRO]"
+        }
+      }
+    }
+  }
+}
