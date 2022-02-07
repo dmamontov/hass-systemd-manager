@@ -1,7 +1,7 @@
 {
   "domain": "systemd_manager",
   "name": "Systemd Manager",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "documentation": "https://github.com/dmamontov/hass-systemd-manager",
   "issue_tracker": "https://github.com/dmamontov/hass-systemd-manager/issues",
   "config_flow": true,

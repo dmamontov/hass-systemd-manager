@@ -89,7 +89,12 @@ class SystemdSwitch(SwitchEntity):
 
     @callback
     def _schedule_immediate_update(self) -> None:
-        self.async_schedule_update_ha_state(True)
+        if (
+            self._is_available != self.service.is_available
+            or self._is_on != self.service.is_on
+            or self._extra != self.service.extra
+        ):
+            self.async_schedule_update_ha_state(True)
 
     async def will_remove_from_hass(self) -> None:
         if self.unsub_update:
